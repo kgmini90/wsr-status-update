@@ -3,9 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: 'app-root', component: AppComponent },
-  { path: '', redirectTo: '/app-root', pathMatch: 'full' },
-  { path: '**', redirectTo: '/app-root', pathMatch: 'full' },
+  { path: '', component: AppComponent },
+  { path: 'wsr', component: AppComponent },
+  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '**', redirectTo: '/', pathMatch: 'full' },
 ];
 
 @NgModule({
